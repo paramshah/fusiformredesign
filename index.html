@@ -252,7 +252,10 @@
                         <img alt="Bettie Page" onclick="document.getElementById ('bettie-bio').className = document.getElementById ('bettie-bio').className == 'hidden' ? '' : 'hidden'" src="http://www.bettiepage.com/images/photos/bikini/bikini1_a.jpg">
 
                         </div> -->
-                        <h4 style="color:#00a6c6;font-family:Avenir;font-size:32px;" id="product-description">Remove a piece and refabricate in minutes.</h4>
+                        <h4 style="color:#00a6c6;font-family:Avenir;font-size:32px;" id="product-description">A completely modular design.</h4>
+                        
+
+                        <!-- <div class="bounce"><img src="img/arrow.png"></div> -->
 
 
 
@@ -725,22 +728,25 @@
                 // }
 
                 if (image.src.match("img/orthotic_graphic.png")) {
-                    image.src = "img/mockups/clientside.png";
-                    document.getElementById("product-description").innerHTML = "Create awesomeness";
+                    image.src = "img/hole_orthotic.png";
+                    document.getElementById("product-description").innerHTML = "Remove a piece and refabricate in minutes.";
                 }
-                else if (image.src.match("img/mockups/clientside.png")) {
+                else if (image.src.match("img/hole_orthotic.png")) {
                     image.src = "img/mockups/tab1.png";
-                    document.getElementById("product-description").innerHTML = "Create good";
+                    document.getElementById("product-description").innerHTML = "Increase the lifespan of the device.";
                 }
                 else {
                     image.src = "img/orthotic_graphic.png";
-                    document.getElementById("product-description").innerHTML = "Remove a piece and refabricate in minutes.";
+                    document.getElementById("product-description").innerHTML = "A completely modular design.";
                 }
 
                 // if(image.src.match("img/mockups/tab1.png")) {
                 //     image.src= "img/orthotic_graphic.png";
                 // }
             }
+
+           
+
 
             // function switchText() {
             //     document.getElementById("product-description").innerHTML = "Create awesomeness";

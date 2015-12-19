@@ -1033,6 +1033,8 @@ header .container {
     display: inline-block;
     font-size: 30px;
 }
+
+
 /*6.5 PRICING*/
 
 .pricing {
@@ -2178,4 +2180,27 @@ text-transform: uppercase;
 #team-div {
     padding-top: 5px;
     padding-bottom: 10px;
+}
+
+.bounce {
+  position:relative;
+  left:50%;
+  bottom:0;
+  margin-top:0px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+  background:white;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:3px; }
+  5%       { bottom:5px; }
+  10%      { bottom: 7px;}
+  25%, 75% { bottom:10px; }
+  30%, 70% { bottom: 13px;}
+  45%, 55% { bottom: 14px;}
+  50%      { bottom:15px; }
+  100%     {bottom:0;}
 }

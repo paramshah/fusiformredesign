@@ -261,6 +261,8 @@
                     <div class="col-lg-6 text-center" onload="document.getElementById ('product-description').className = 'hidden'">
                         <img style="width:50%;" id="design1" onclick="document.getElementById ('product-description').className = document.getElementById ('product-description').className == 'hidden' ? '' : 'hidden';changeImage()" src="img/orthotic_graphic.png">
 
+                        
+
                         <!-- <h2 class="section-heading">Our DESIGN</h2>
                         <span class="separator"></span>
                         <p style="font-family: Avenir;" class="section-subheading ">The first modular orthotic device. Capable of being manufactured in 1.5 hours, this device provides...</p> -->
@@ -714,11 +716,22 @@
         <script>
             function changeImage() {
                 var image = document.getElementById('design1');
+                // if (image.src.match("img/orthotic_graphic.png")) {
+                //     image.src = "img/mockups/clientside.png";
+                // } else {
+                //     image.src = "img/mockups/tab1.png";
+                // }
+
                 if (image.src.match("img/orthotic_graphic.png")) {
                     image.src = "img/mockups/clientside.png";
-                } else {
+                }
+                else if (image.src.match("img/mockups/clientside.png")) {
                     image.src = "img/mockups/tab1.png";
                 }
+                else {
+                    image.src = "img/orthotic_graphic.png";
+                }
+
                 // if(image.src.match("img/mockups/tab1.png")) {
                 //     image.src= "img/orthotic_graphic.png";
                 // }

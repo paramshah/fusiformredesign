@@ -245,9 +245,21 @@
                         <h2 class="section-heading">Our Design</h2>
                         <span class="separator"></span>
                         <p style="font-family: Avenir;" class="section-subheading ">Introducing the first modular orthotic device. Capable of being manufactured in 1.5 hours in-house, this manufacturing process is <strong>revolutionary</strong>.</p>
+
+
+
+                        <!-- <div  onload="document.getElementById ('bettie-bio').className = 'hidden'">
+                        <img alt="Bettie Page" onclick="document.getElementById ('bettie-bio').className = document.getElementById ('bettie-bio').className == 'hidden' ? '' : 'hidden'" src="http://www.bettiepage.com/images/photos/bikini/bikini1_a.jpg">
+
+                        </div> -->
+                        <h4 style="color:#00a6c6;font-family:Avenir;font-size:32px;" id="product-description">Remove a piece and refabricate in minutes.</h4>
+
+
+
+
                     </div>
-                    <div class="col-lg-6 text-center">
-                        <img style="width:50%;" src="img/orthotic_graphic.png">
+                    <div class="col-lg-6 text-center" onload="document.getElementById ('product-description').className = 'hidden'">
+                        <img style="width:50%;" id="design1" onclick="document.getElementById ('product-description').className = document.getElementById ('product-description').className == 'hidden' ? '' : 'hidden';changeImage()" src="img/orthotic_graphic.png">
 
                         <!-- <h2 class="section-heading">Our DESIGN</h2>
                         <span class="separator"></span>
@@ -699,6 +711,19 @@
         <!-- END FOOTER -->
         <!-- SCRIPTS -->
         <!-- jQuery & Bootstrap -->
+        <script>
+            function changeImage() {
+                var image = document.getElementById('design1');
+                if (image.src.match("img/orthotic_graphic.png")) {
+                    image.src = "img/mockups/clientside.png";
+                } else {
+                    image.src = "img/mockups/tab1.png";
+                }
+                // if(image.src.match("img/mockups/tab1.png")) {
+                //     image.src= "img/orthotic_graphic.png";
+                // }
+            }
+        </script>
         <script src="js/jquery.js"></script>
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

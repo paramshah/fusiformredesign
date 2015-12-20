@@ -45,7 +45,7 @@
                         <li>
                             <a class="page-scroll" href="#features">Features</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="page-scroll" href="#pricing">Pricing</a>
                         </li>
                         <li>
@@ -59,7 +59,7 @@
                         </li>
                         <li>
                             <a class="page-scroll" href="#" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><strong>Client Login</strong></a>
-                        </li>
+                        </li> -->
                     </ul>
                     <!-- END MAIN NAV LINKS -->
                 </div>
@@ -97,13 +97,17 @@
                     </div>
 
                     <form name="sentMessage" id="contactForm" novalidate>
-                            <div class="row">
-                                <div class="col-lg-4 form-group">
+                            <center><div style="width:50%;height:auto;" class="row">
+                                <div class="form-input form-group">
                                     <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="col-lg-4 form-group ">
+                                <div class="form-input form-group ">
                                     <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-input form-group ">
+                                    <input type="company" class="form-control" placeholder="Company" id="company" required data-validation-required-message="Please enter your company name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group form-textarea">
@@ -115,7 +119,7 @@
                                     <div id="success"></div>
                                     <button type="submit" class="btn btn-xl">Send Message</button>
                                 </div>
-                            </div>
+                            </div></center>
                         </form>
                     <!-- END SERVICES HEADING -->
                 </div>
@@ -152,56 +156,57 @@
                         <!-- TAB 1 -->
                         <div id="features-tab1">
                             <div class="row">
-                                <h2 class="section-heading">Managing tools</h2>
-                                <p style="font-family:Avenir;" class="section-subheading ">Take advantage of media's most prominent business trend, and empowers your internal advertising teams.</p>
+                                <h2 class="section-heading">Fusiform<strong>CAST</strong></h2>
+                                <p style="font-family:Avenir;" class="section-subheading ">A versatile and powerful platform to make custom fabrication efficient and hassle-free.</p>
                             </div>
                             <ul>
-                                <li>Professional and easy-to-use software </li>
-                                <li>Setup and installations takes ten minutes</li>
-                                <li>Perfect for any device with pixel-perfect design</li>
-                                <li>It takes few minutes to setup</li>
+                                <li>Remove long casting hours and spend time with your patients</li>
+                                <li>Open collaboration between clinicians and technicians</li>
+                                <li>Scan, generate, and annotate 3D models to send directly to vendors</li>
+                                <li>Applicable to several different products from orthoses to protheses</li>
+                                
                             </ul>
-                            <a href="#" class="primary-button button-inverse">Get Desktop Version</a>
+                            <a href="trial.html" class="primary-button button-inverse">Learn More</a>
                             <img src="img/mockups/castlaptop.png" class="fadeRight animated" alt="">
                         </div>
                         <!-- END TAB 1 -->
                         <!-- TAB 2 -->
                         <div id="features-tab2">
                             <div class="row">
-                                <h2 class="section-heading">Mobile Support</h2>
-                                <p class="section-subheading ">Spend less time worrying about front-end and more focusing on your products and projects and plans.</p>
+                                <h2 class="section-heading">For Clinics</h2>
+                                <p style="font-family:Avenir;" class="section-subheading ">Start using CAST at your location today.</p>
                             </div>
                             <ul>
-                                <li>Professional and easy-to-use app </li>
-                                <li>A better way to present your app</li>
-                                <li>Now available on the App Store and Play Store!</li>
-                                <li>It takes few minutes to setup</li>
+                                <li>Save hours of casting per day</li>
+                                <li>Schedule more patient appointments</li>
+                                <li>Optimize communication within your business</li>
+                                <li>Communicate with central fabrication easier.</li>
                             </ul>
-                            <a href="#" class="primary-button button-inverse">Get Mobile Version</a>
-                            <img src="img/mockups/tab2.png" class="fadeRight animated" alt="">
+                            <a href="trial.html" class="primary-button button-inverse">Start a Trial Today</a>
+                            <img style="max-width:75%;" src="img/mockups/clientside.png" class="fadeRight animated" alt="">
                         </div>
                         <!-- END TAB 2 -->
                         <!-- TAB 3 -->
                         <div id="features-tab3">
                             <div class="row">
-                                <h2 class="section-heading">Constant Updates</h2>
-                                <p class="section-subheading ">Take advantage of media's most prominent business trend, and empowers your internal advertising teams.</p>
+                                <h2 class="section-heading">For Vendors</h2>
+                                <p style="font-family:Avenir;" class="section-subheading ">Become a vendor on CAST for seamless communication with customers and a dynamic order management platform.</p>
                             </div>
                             <ul>
-                                <li>Professional tablet software & apps </li>
-                                <li>Setup and installations takes up to twenty</li>
-                                <li>A better way to present your app with KeySoft</li>
-                                <li>It takes few minutes to setup the software</li>
+                                <li>Secure and efficient storage of orders</li>
+                                <li>Collaborate openly with customers</li>
+                                <li>Better management of your orders</li>
+                                <!-- <li>It takes few minutes to setup the software</li> -->
                             </ul>
-                            <a href="#" class="primary-button button-inverse">Get Tablet Version</a>
+                            <a href="trial.html" class="primary-button button-inverse">Start a Trial Today</a>
                             <img src="img/mockups/tab3.png" class="fadeRight animated" alt="">
                         </div>
                         <!-- END TAB 3 -->
                         <!-- FEATURES TABS -->
                         <ul class='tabs'>
-                            <li class='tab col-md-4'><a href="#features-tab1"><span class="triangle"><span class="inner-triangle"></span></span>Desktop Version</a></li>
-                            <li class='tab col-md-4'><a href="#features-tab2"><span class="triangle"><span class="inner-triangle"></span></span>Mobile Version</a></li>
-                            <li class='tab col-md-4'><a href="#features-tab3"><span class="triangle"><span class="inner-triangle"></span></span>Tablet Version</a></li>
+                            <li class='tab col-md-4'><a href="#features-tab1"><span class="triangle"><span class="inner-triangle"></span></span>Overview</a></li>
+                            <li class='tab col-md-4'><a href="#features-tab2"><span class="triangle"><span class="inner-triangle"></span></span>Clinics</a></li>
+                            <li class='tab col-md-4'><a href="#features-tab3"><span class="triangle"><span class="inner-triangle"></span></span>Vendors</a></li>
                         </ul>
                         <!-- END FEATURES TABS -->
                     </div>
@@ -294,45 +299,45 @@
         </section> -->
         <!-- PRICING TABLES -->
         <!-- TESTIMONIALS -->
-        <section id="testimonials" class="gray-bg">
+        <!-- <section id="testimonials" class="gray-bg">
             <div class="container">
                 <div class="row">
-                    <div class="slider">
+                    <div class="slider"> -->
                         <!-- TESTIMONIALS 1 -->
-                        <div class="tt-content">
+                       <!--  <div class="tt-content">
                             <h3><span class="tt-quote">“</span><span class="tt-quote tt-quote-right">”</span>CAST is incredible! It helps us save hours of time spent casting.</h3>
                             <div class="tt-container">
                                 <h4 >Antony Casalena</h4>
                                 <span class="content">Vice president, IQTeam</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- TESTIMONIALS 2 -->
-                        <div class="tt-content">
+                        <!-- <div class="tt-content">
                             <h3 ><span class="tt-quote">“</span><span class="tt-quote tt-quote-right">”</span>Using CAST allows our orthotists to spend more time getting to know our patients.</h3>
                             <div class="tt-container">
                                 <h4 >Antony Casalena</h4>
                                 <span class="content">Vice president, IQTeam</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- TESTIMONIALS 3 -->
-                        <div class="tt-content">
+                       <!--  <div class="tt-content">
                             <h3 ><span class="tt-quote">“</span><span class="tt-quote tt-quote-right">”</span>CAST redefines the orthotics industry. Casting is a thing of the past.</h3>
                             <div class="tt-container">
                                 <h4 >Antony Casalena</h4>
                                 <span class="content">Vice president, IQTeam</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- TESTIMONIALS IMAGE CAPTIONS -->
-                    <div class="tt-images">
+                    <!-- <div class="tt-images">
                         <div class="tt-image"><img width="80" height="80" src="img/testimonials/testimonial1.png" alt="team"></div>
                         <div class="tt-image"><img width="80" height="80" src="img/testimonials/testimonial2.png" alt="team"></div>
                         <div class="tt-image"><img width="80" height="80" src="img/testimonials/testimonial3.png" alt="team"></div>
-                    </div>
+                    </div> -->
                     <!-- END TESTIMONIALS IMAGE CAPTIONS -->
-                </div>
+                <!-- </div>
             </div>
-        </section>
+        </section> -->
         <!-- END TESTIMONIALS -->
         <!-- TEAM -->
         <!-- <section id="team">
@@ -480,22 +485,22 @@
         </section> -->
         <!-- END CLIENTS -->
         <!-- CONTACT -->
-        <section id="contact">
-            <div class="contact-map-container">
+        <!-- <section id="contact">
+            <div class="contact-map-container"> -->
                 <!-- GOOGLE MAP-->
-                <div id="map"></div>
+                <!-- <div id="map"></div>
             </div>
             <div class="container">
-                <div class="contact-form-container">
+                <div class="contact-form-container"> -->
                     <!-- CONTACT HEADING -->
-                    <div class="row">
+                    <!-- <div class="row">
                         <h2 class="section-heading">Contact</h2>
                         <p style="font-family:Avenir;" class="section-subheading ">Feel free to talk to us and we will get back to you within a day.</p>
-                    </div>
+                    </div> -->
                     <!-- END CONTACT HEADING -->
-                    <div class="row">
+                    <!-- <div class="row"> -->
                         <!-- CONTACT FORM -->
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <!-- <form name="sentMessage" id="contactForm" novalidate>
                             <div class="row">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
@@ -515,12 +520,12 @@
                                     <button type="submit" class="btn btn-xl">Send Message</button>
                                 </div>
                             </div>
-                        </form>
+                        </form> -->
                         <!-- END CONTACT FORM -->
-                    </div>
+                    <!-- </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- END CONTACT -->
         <!-- FOOTER -->
         <footer>

@@ -2182,6 +2182,107 @@ text-transform: uppercase;
     padding-bottom: 10px;
 }
 
+/* Icon */
+
+    .icon {
+        text-decoration: none;
+        position: relative;
+    }
+
+        .icon:before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-transform: none !important;
+        }
+
+        .icon.circle {
+            -moz-transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            border: 0;
+            border-radius: 100%;
+            display: inline-block;
+            font-size: 1.25em;
+            height: 2.25em;
+            left: 0;
+            line-height: 2.25em;
+            text-align: center;
+            text-decoration: none;
+            top: 0;
+            width: 2.25em;
+        }
+
+            .icon.circle:hover {
+                top: -0.2em;
+            }
+
+            .icon.circle.fa-twitter {
+                background: #70aecd;
+                color: #fff;
+            }
+
+                .icon.circle.fa-twitter:hover {
+                    background: #7fb7d2;
+                }
+
+            .icon.circle.fa-facebook {
+                background: #7490c3;
+                color: #fff;
+            }
+
+                .icon.circle.fa-facebook:hover {
+                    background: #829bc9;
+                }
+
+            .icon.circle.fa-google-plus {
+                background: #db6b67;
+                color: #fff;
+            }
+
+                .icon.circle.fa-google-plus:hover {
+                    background: #df7b77;
+                }
+
+            .icon.circle.fa-github {
+                background: #dcad8b;
+                color: #fff;
+            }
+
+                .icon.circle.fa-github:hover {
+                    background: #e1b89b;
+                }
+
+            .icon.circle.fa-dribbble {
+                background: #da83ae;
+                color: #fff;
+            }
+
+                .icon.circle.fa-dribbble:hover {
+                    background: #df93b8;
+                }
+
+        .icon.featured {
+            cursor: default;
+            display: block;
+            margin: 0 0 1.5em 0;
+            opacity: 0.35;
+            text-align: center;
+        }
+
+            .icon.featured:before {
+                font-size: 5em;
+                line-height: 1em;
+            }
+
+        .icon > .label {
+            display: none;
+        }
+
+
 .bounce {
   position:relative;
   left:50%;

@@ -2278,6 +2278,21 @@ text-transform: uppercase;
                 line-height: 1em;
             }
 
+        .icon.featured-1 {
+            padding-top: 5px;
+            cursor: default;
+            display: block;
+            font-size:10px;
+            margin: 0 0 1.5em 0;
+            opacity: 0.35;
+            text-align: center;
+        }
+
+            .icon.featured-1:before {
+                font-size: 5em;
+                line-height: 1em;
+            }
+
         .icon > .label {
             display: none;
         }

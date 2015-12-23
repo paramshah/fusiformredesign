@@ -80,7 +80,7 @@
                     </div>
                 </div>
                      <div class="header-dashboard"> 
-                        <img style="margin-right=100px;" src="img/mockups/mobile.png" class="dashboard" alt="">
+                        <img style="padding-bottom:0px;width:65%;" src="img/view2_exploded_black.png" class="dashboard" alt="">
                     </div>
             </div>
             <div id="particles-js"></div>
@@ -200,7 +200,7 @@
                     <div class="col-lg-6 text-center" onload="document.getElementById ('product-description').className = 'hidden'">
                         <!-- <img style="width:50%;" id="design1" onclick="document.getElementById ('product-description').className = document.getElementById ('product-description').className == 'hidden' ? '' : 'hidden';changeImage()" src="img/orthotic_graphic.png"> -->
 
-                        <img style="width:50%;" id="design1" onclick="changeImage()" src="img/orthotic_graphic.png">
+                        <img style="width:50%;" id="design1" onclick="changeImage()" src="img/view3_exploded_black.png">
 
                         
 
@@ -732,16 +732,16 @@
                 //     image.src = "img/mockups/tab1.png";
                 // }
 
-                if (image.src.match("img/orthotic_graphic.png")) {
-                    image.src = "img/hole_orthotic.png";
+                if (image.src.match("img/view3_exploded_black.png")) {
+                    image.src = "img/left_wleg_black.png";
                     document.getElementById("product-description").innerHTML = "Remove a piece and refabricate in minutes.";
                 }
-                else if (image.src.match("img/hole_orthotic.png")) {
+                else if (image.src.match("img/left_wleg_black.png")) {
                     image.src = "img/view2_woleg.png";
                     document.getElementById("product-description").innerHTML = "Increase the lifespan of the device.";
                 }
                 else {
-                    image.src = "img/orthotic_graphic.png";
+                    image.src = "img/view3_exploded_black.png";
                     document.getElementById("product-description").innerHTML = "A completely modular design.";
                 }
 

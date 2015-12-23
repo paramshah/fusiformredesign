@@ -1,5 +1,5 @@
 // CUSTOM KEYSOFT SCRIPTS
-
+var contact_address = "alexjmathews@gmail.com";
 (function($) {
 
   "use strict";
@@ -59,7 +59,17 @@
     preventSubmit: true,
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
+      var post_url = "//formspree.io/" + contact_address;
+      var email = $("input#email").val();
       $.ajax({
+        url: post_url,
+        method: "POST",
+        data: {
+          form: "Subscribe",
+          email: email,
+        },
+        dataType: "json",
+        cache: false,
         success: function() {
           $('#subscribe-success').html("<div class='alert alert-success'>");
           $('#subscribe-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -82,6 +92,7 @@
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
+      var post_url = "//formspree.io/" + contact_address;
       var name = $("input#name").val();
       var email = $("input#email").val();
       var message = $("textarea#message").val();
@@ -91,13 +102,15 @@
         firstName = name.split(' ').slice(0, -1).join(' ');
       }
       $.ajax({
-        url: "././mail/contact_me.php",
-        type: "POST",
+        url: post_url,
+        method: "POST",
         data: {
+          form: "Contact Us",
           name: name,
           email: email,
           message: message
         },
+        dataType: "json",
         cache: false,
         success: function() {
           // Success message

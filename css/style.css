@@ -1473,6 +1473,7 @@ header .container {
     letter-spacing: -1px;
     font-size: 30px;
     font-weight: 300;
+    padding-right: 30px;
     float: left;
     margin: 0;
     line-height: 50px;

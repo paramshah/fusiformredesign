@@ -1659,7 +1659,7 @@ footer {
 }
 .lower-footer span,
 .lower-footer a {
-    opacity: 0.2;
+    opacity: .5;
     color: white;
     font-family: PTSans;
     font-size: 12px;
